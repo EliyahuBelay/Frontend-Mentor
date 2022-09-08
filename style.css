@@ -70,6 +70,7 @@
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: -15%;
+    overflow-y:scroll;
 }
 
 .prices_conteiner{
@@ -160,20 +161,32 @@
         display:block;
     }
     #card_details .second_headline_card_detailse{
-        font-weight:bolder;
         font-size:xx-large;
         max-inline-size:80%;
-        margin-top: 15px;
+        margin-top: 3px;
     }
     #card_details .para_card_datailes{
         font-size: 18px;
         font-weight:400;
-        margin-top: 28px;
+        margin-top: 20px;
     }
     .prices_conteiner{
-        /* align-items: center; */
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-top: 20%;
     }
-    /* (עכשיו נותר לי לסדר מבחינת מיקום את המחירים והכפתור) */
+    .conteiner_btn_purch_item{
+        height: 80px;
+    }
+}
+@media screen and (max-width:377px){
+    #card_details .second_headline_card_detailse{
+        font-size:25px;
+        max-inline-size:80%;
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width:281px){
+    #card_details .second_headline_card_detailse{
+        height: fit-content;
+        font-size:22px;
+    }
 }
