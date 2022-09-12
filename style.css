@@ -27,9 +27,12 @@
 
 .card_container .image_desktop{
     height:100%;
-    width:100%;
+    max-width:100%;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
+    display: block;
+    object-fit: cover;
+       
 }
 .card_container .image_mobile{
     display:none;
@@ -159,6 +162,7 @@
     }
     .card_container .image_mobile{
         display:block;
+        object-fit:cover;
     }
     #card_details .second_headline_card_detailse{
         font-size:xx-large;
